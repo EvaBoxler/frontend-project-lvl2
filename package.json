@@ -8,7 +8,7 @@
   },
   "main": "src/index.js",
   "scripts": {
-    "test": "jest"
+    "test": "npx -n --experimental-vm-modules jest"
   },
   "repository": {
     "type": "git",
@@ -37,5 +37,6 @@
     "eslint-plugin-import": "^2.26.0",
     "jest": "^28.1.2",
     "typescript": "^4.7.4"
-  }
+  },
+  "keywords": []
 }
