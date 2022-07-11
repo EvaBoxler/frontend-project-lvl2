@@ -2,6 +2,10 @@
 
 [![Actions Status](https://github.com/EvaBoxler/frontend-project-lvl2/workflows/hexlet-check/badge.svg)](https://github.com/EvaBoxler/frontend-project-lvl2/actions)
 
+[![Maintainability](https://api.codeclimate.com/v1/badges/b91e797d2e5e45eeb26d/maintainability)](https://codeclimate.com/github/EvaBoxler/frontend-project-lvl2/maintainability)
+
+[![Test Coverage](https://api.codeclimate.com/v1/badges/b91e797d2e5e45eeb26d/test_coverage)](https://codeclimate.com/github/EvaBoxler/frontend-project-lvl2/test_coverage)
+
 Installation:
 
 1.Clone this repo with command: git clone.
@@ -12,7 +16,9 @@ Installation:
 
 4.Format styles: plain, json, stylish.
 
-Videoreview: https://asciinema.org/a/f0XJpDPieu3HVe4NjXUtKEZWI
+Videoreview:
+
+Example with flat filesh: https://asciinema.org/a/f0XJpDPieu3HVe4NjXUtKEZWI
 
 Example with nested files: https://asciinema.org/a/DTEC0DnEtGNze5Z39ahMblUag
 
