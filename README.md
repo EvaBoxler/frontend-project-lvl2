@@ -6,8 +6,6 @@
 
 [![Test Coverage](https://api.codeclimate.com/v1/badges/b91e797d2e5e45eeb26d/test_coverage)](https://codeclimate.com/github/EvaBoxler/frontend-project-lvl2/test_coverage)
 
-[![Build Status](https://app.travis-ci.com/EvaBoxler/frontend-project-lvl2.svg?branch=main)](https://app.travis-ci.com/EvaBoxler/frontend-project-lvl2)
-
 Installation:
 
 1.Clone this repo with command: git clone.
