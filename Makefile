@@ -13,5 +13,5 @@ lint:
 test:
 		npm test
 
-coverageCommand:
+test-coverage:
 		npm test -- --coverage --coverageProvider=v8
