@@ -40,6 +40,7 @@
     "eslint-plugin-jest": "^26.5.1",
     "jest": "^28.1.2",
     "jest-expect-message": "^1.0.2",
-    "react-test-renderer": "^18.2.0"
+    "react-test-renderer": "^18.2.0",
+    "solidity-coverage": "^0.7.21"
   }
 }
