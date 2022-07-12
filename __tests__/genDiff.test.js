@@ -6,26 +6,16 @@ const expectedStylishOutput = readFile('stylishOutput.txt');
 const expectedPlainOutput = readFile('plainOutput.txt');
 const expectedJsonOutput = readFile('jsonOutput.txt');
 
-test('gediff stylish test .JSON', () => {
-  expect(genDiff('file1.json', 'file2.json')).toEqual(expectedStylishOutput);
-});
+test.each([
+  { file1: 'file1.json', file2: 'file2.json', expected: expectedStylishOutput, format: 'stylish', description: 'stylish format - json files' },
+  { file1: 'file1.yml', file2: 'file2.yaml', expected: expectedStylishOutput, format: 'stylish', description: 'stylish format - yaml files' },
 
-test('gendiff plain test .JSON', () => {
-  expect(genDiff('file1.json', 'file2.json', 'plain')).toEqual(expectedPlainOutput);
-});
+  { file1: 'file1.json', file2: 'file2.json', expected: expectedPlainOutput, format: 'plain', description: 'plain format - json files' },
+  { file1: 'file1.yml', file2: 'file2.yaml', expected: expectedPlainOutput, format: 'plain', description: 'plain format - yaml files' },
 
-test('gendiff stylish test .yml', () => {
-  expect(genDiff('file1.yml', 'file2.yaml')).toEqual(expectedStylishOutput);
-});
+  { file1: 'file1.json', file2: 'file2.json', expected: expectedJsonOutput, format: 'json', description: 'json format - json files' },
+  { file1: 'file1.yml', file2: 'file2.yaml', expected: expectedJsonOutput, format: 'json', description: 'json format - yaml files' },
 
-test('gendiff plain test .yml', () => {
-  expect(genDiff('file1.yml', 'file2.yaml', 'plain')).toEqual(expectedPlainOutput);
-});
-
-test('gendiff .json test to JSON', () => {
-  expect(genDiff('file1.json', 'file2.json', 'json')).toEqual(expectedJsonOutput);
-});
-
-test('gendiff .yml and yaml test to JSON', () => {
-  expect(genDiff('file1.yml', 'file2.yaml', 'json')).toEqual(expectedJsonOutput);
+])('$description', ({ file1, file2, expected, format }) => {
+  expect(genDiff(file1, file2, format)).toEqual(expected);
 });
