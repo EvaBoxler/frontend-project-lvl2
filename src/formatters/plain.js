@@ -44,7 +44,7 @@ const buildTree = (nodes) => {
 const plain = (tree) => {
   const result = tree.map((node) => buildTree(node));
 
-  return result.join('').replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, '');
+  return result.join('').replace('\n', '');
 };
 
 export default plain;
